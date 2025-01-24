@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #efedd6;
+    font-family: 'Roboto',sans-serif;
+    display: flex;   
+    flex-direction: column; /*changes the difernction of the item from vertical to coloumn*/
+    align-items: center; /*moves it to the center*/
+    justify-content: center;  /*move the item to the center to the center of the screen h and vertically. */
+    /* height: 100vh;   allow the justify conten to work by giving the height and the entire view port of the screen */
+
+    margin: 0;
+}
+ 
+h1{
+    margin: 10px;
+}
+ .box{
+    background-color: #38373d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translate(200%);
+    transition: transform 0.4s ease;
+ }
+
+ .box:nth-of-type(even){
+    transform: translate(-200%);
+ }
+
+ .box.show{
+    transform: translate(0);
+ }
+
+ .box h2{
+    font: size 45px;
+ }
